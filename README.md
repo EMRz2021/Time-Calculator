@@ -6,7 +6,7 @@
 
 In addition, you can choose to save the result of the important occasions chronologicaly, so you can keep tracking them constantly.
 
-##Languages used:
+## Languages used:
 HTML, CSS, and Javascript
 
 ## Some Screenshots
