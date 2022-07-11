@@ -1,0 +1,356 @@
+body {
+	background: #222;
+	min-height: 100vh;
+	margin: 0;
+	overflow: hidden;
+}
+
+#titleDiv {
+	width: 100vw;
+	height: 10vh;
+	font-size: 6vw;
+	line-height: 0;
+	position: relative;
+	top: 25vh;
+	left: 5vw;
+	animation: positioning 2s 1.9s forwards linear;
+}
+
+@keyframes positioning {
+	to {
+		top: 0vh;
+		font-size: 2.5vw;
+	}
+}
+
+#generalTitle1, #generalTitle2 {
+	color: #c5c5c5;
+	cursor: default;
+	position: absolute;
+
+}
+
+#generalCont {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+	gap: 15px;
+	width: 96vw;
+	margin: 1vh auto auto 2vw; 
+	height: 85vh;
+	overflow: hidden;
+	opacity: 0;
+	animation: show 1s 3.7s forwards linear;
+}
+@keyframes show {
+	to {
+		opacity: 1;
+	}
+}
+
+/* Left Side*/
+
+#inputCont {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+	padding: 5px;
+	border-right: 1px dashed #999;
+}
+
+.inputDiv {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+input, #enterBtn {
+	font-size: 1rem;
+	color: #c5c5c5;
+	border: none;
+	background-color: #fff3;
+	font-weight: bold;
+}
+
+#memInputTxt {
+	width: 90%;
+	border-radius: 5px 5px 5px 5px;
+	padding: 5px;
+	margin-bottom: 10px;
+	color: #c5c5c5;
+	font-weight: normal;
+}
+#memInputTxt:focus{
+    outline: none;
+}
+
+::placeholder {
+	font-style: italic;
+	font-size: 15px;
+}
+
+#dateInput {
+	width: 175px;
+	padding-top: 2px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #c5c5c5;
+	border-radius: 15px 15px 0px 0px;
+	cursor: text;
+	margin-bottom: 1px;
+	text-align: center;
+}
+#dateInput:focus{
+    outline: none;
+}
+
+#warning {
+	color: #0000;
+	font-size: 0.01rem;
+	position: relative;
+	top: -10px;
+	left: 105px;
+}
+.showWarning {
+	animation: showW 0.2s forwards;
+}
+
+@keyframes showW {
+	to {font-size: 2rem;
+		color: red;
+		margin: -18px
+	}
+}
+
+#enterBtn {
+	width: 176px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: 1px solid #c5c5c5;
+	border-radius: 0px 0px 15px 15px;
+	cursor: pointer;
+}
+
+#enterBtn:active {
+	background-color: #6559e1;
+}
+
+hr {
+	width: 200px;
+	border:1px dashed #555;
+	margin-top: 15px;
+}
+
+#counterCont {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 25px;
+}
+
+.bigNos {
+	font-weight: bold;
+	font-size: 4rem;
+	line-height: 1;
+	margin: 0rem 0rem;
+	color: #3f33c5;
+	cursor: default;
+}
+
+.counterDivs {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: 0 1rem;
+	text-align: center;
+}
+
+.daysCounter {
+	transition: all 0.55s;
+}
+.hoursCounter {
+	transition: all 0.7s;
+}
+.minsCounter {
+	transition: all 0.85s;
+}
+.secondsCounter {
+	transition: all 1s;
+}
+
+.counterDivs span {
+	font-size: 1.2rem;
+	color: #c5c5c5;
+}
+
+.rotate {
+	transform: rotate(720deg);
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 2rem;
+	color: #c5c5c5;
+	text-align: center;
+	cursor: default;
+}
+
+#resultTxt {
+	max-height: 20%;
+	font-size: 0.1rem;
+	color: #111;
+	text-shadow: none;
+	overflow: auto;
+}
+.show {
+	animation: zoomIn 1s 1s forwards;
+}
+
+@keyframes zoomIn {
+	to {font-size: 1.5rem;
+		color: #c5c5c5;
+	}
+}
+
+#resetBtn, #saveBtn {
+	font-size: 1rem;
+	border: none;
+	margin-top: 20px;
+	font-weight: normal;
+	color: #c5c5c5;
+	background: #3f33c5;
+	box-shadow: inset 0px 0px 10px #c5c5c5;
+	border-radius: 25px;
+	padding: 10px;
+	transition: all 0.3s;
+	cursor: default;
+}
+
+/* Right Side */
+
+#outputCont {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: auto;
+}
+
+#outputContTitle {
+	margin: 0;
+	color: #999;
+}
+
+ul {
+	width: 100%;
+	height: 91%;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+li {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+	border-bottom: 1px dashed #999;
+}
+
+.savedMemories {
+	flex-grow: 1;
+	color: #fff;
+	font-size: 1.2rem;
+	padding: 5px 0 0 5px;
+}
+.savedCounters {
+	color: #3f33c5;
+	font-weight: bold;
+}
+
+.delBtn {
+	flex-shrink: 0;
+	height: 30px;
+	font-weight: bold;
+	white-space: nowrap;
+	color: #3f33c5;
+	background: #c5c5c5;
+	box-shadow: inset 0px 0px 10px #3f33c5;
+	border: none;
+	border-radius: 25px 0 0 25px;
+	padding: 0 5px 0 10px;
+	transition: All 0.2s;
+	cursor: pointer;
+	margin-right: 0;
+}
+
+.delBtn:active {
+	color: #c5c5c5;
+	background: #3f33c5;
+	box-shadow: inset 0px 0px 10px #c5c5c5;
+}
+
+@media only screen and (max-width: 780px) {
+	body {
+		overflow: visible;
+	}
+	
+	@keyframes positioning {
+		to {
+			top: 3vh;
+			font-size: 3.5vw;
+		}
+	}
+	
+	#generalCont {
+		width: 95vw;
+		margin: 1vh auto auto 1vw;
+		height: auto;
+		overflow: visible;
+	}
+	
+	/* up Side*/
+	
+	#inputCont {
+		width: auto;
+		height: auto;
+		border-right: none;
+	}
+
+	#resultTxt {
+		max-height: fit-content;
+		overflow: visible;
+	}
+
+	/* down Side */
+	
+	#outputCont {
+		background: #333;
+		/* width: 100vw; */
+		height: auto;
+		overflow: visible;
+	}
+	
+	#outputContTitle {
+		text-decoration: overline;
+	}
+	
+	ul {
+		height: auto;
+		overflow: visible;
+	}
+	
+	li {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	.delBtn {
+		flex-shrink: 1;
+		border-radius: 25px;
+		padding: 0 5px 0 10px;
+		margin: 5px auto;
+	}
+}

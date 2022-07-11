@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<title>TIME CALCULATOR</title>
+	<link rel="stylesheet" type="text/css" href="Time Calculator-style.css">
+</head>
+<body>
+  <div id="titleDiv">
+    <h2 id="generalTitle1"></h2>
+    <h2 id="generalTitle2"></h2>
+  </div>  
+  <div id="generalCont">
+    <div id="inputCont">
+      <div class="inputDiv">
+        <input id="memInputTxt" type="text" placeholder="What is the occasion you want to calculate the date of" autofocus>
+        <input id="dateInput" type="date">
+        <span id="warning">*</span>
+        <button id="enterBtn">Calculate</button>
+      </div>
+    
+      <hr>
+      
+      <div id="counterCont">
+        <div class="counterDivs daysCounter">
+          <p class="bigNos daysNo">0</p>
+          <span>D</span>
+        </div>
+        <div class="counterDivs hoursCounter">
+          <p class="bigNos hoursNo">0</p>
+          <span>H</span>
+        </div>
+        <div class="counterDivs minsCounter">
+          <p class="bigNos minsNo">0</p>
+          <span>M</span>
+        </div>
+        <div class="counterDivs secondsCounter">
+          <p class="bigNos secondsNo">0</p>
+          <span>S</span>
+        </div>
+      </div>
+      <h1 id="resultTxt"></h1>
+      <div id="buttons">
+        <button id="resetBtn" disabled>Ignor Memory</button>
+        <button id="saveBtn" disabled>Save Memory</button>
+      </div>
+    </div>
+
+    <div id="outputCont">
+      <h1 id="outputContTitle">Saved Memories</h1>
+      <ul>
+        <!-- <li>
+          <span class="savedMemories">TEST "2022-06-08":<br>
+            <span class="savedCounters">Passed time: "5 days, 3:05:04"</span>
+          </span>
+          <button class="delBtn">Delete Memory</button>
+        </li> -->
+      </ul>
+
+    </div>
+  </div>
+
+<script type="text/javascript" src="Time Calculator-script.js"></script>
+
+</body>
+</html>
