@@ -1,12 +1,13 @@
 # Time-Calculator
 
 ## With this app you can calculate the time between two points: 
-##      The first one is the current date and time,
-##      The second point can be related to a certain occasion either in future or in past.
+- The first one is the current date and time,
+- The second point can be related to a certain occasion either in future or in past.
 
-## In addition, you can choose to save the result of the important occasions chronologicaly, so you can keep tracking them constantly.
+In addition, you can choose to save the result of the important occasions chronologicaly, so you can keep tracking them constantly.
 
-Languages used: HTML, CSS, and Javascript
+##Languages used:
+HTML, CSS, and Javascript
 
 ## Some Screenshots
 ![Screenshot1](https://user-images.githubusercontent.com/93922346/178251439-259e0626-64b7-494f-b1e4-4f29f4224ec5.JPG)
