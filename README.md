@@ -1,8 +1,8 @@
 # Time-Calculator
 
 ## With this app you can calculate the time between two points: 
-    ## the first one is the current date and time,
-    ## the second point can be related to a certain occasion either in future or in past.
+##      The first one is the current date and time,
+##      The second point can be related to a certain occasion either in future or in past.
 
 ## In addition, you can choose to save the result of the important occasions chronologicaly, so you can keep tracking them constantly.
 
